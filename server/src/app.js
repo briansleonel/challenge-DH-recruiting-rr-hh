@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
+const profesionesRouter = require("./routes/profesiones.routes");
 
 const app = express();
 
@@ -13,5 +14,7 @@ app.use(cors());
 app.get("/", (req, res) => {
     res.json("Hola mundo");
 });
+
+app.use("/api", profesionesRouter);
 
 module.exports = app;
