@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const morgan = require("morgan");
 const profesionesRouter = require("./routes/profesiones.routes");
+const aspirantesRouter = require("./routes/aspirantes.routes");
 
 const app = express();
 
@@ -16,5 +17,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/api", profesionesRouter);
+app.use("/api", aspirantesRouter);
 
 module.exports = app;
