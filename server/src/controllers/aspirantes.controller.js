@@ -3,7 +3,7 @@ const db = require("../database/models");
 const aspirantesController = {
     list: (req, res) => {
         db.Aspirantes.findAll({
-            include: [{ association: "profesion_aspirantes" }],
+            include: [{ association: "profesion" }],
         })
             .then((aspirantes) => {
                 return res.json({
