@@ -349,7 +349,7 @@ body {
   fill: #2b3a60;
 }
 
-@media(max-width: 480px){
+@media(max-width: 580px){
   .dashboard{
     display: flex;
     flex-direction: column;

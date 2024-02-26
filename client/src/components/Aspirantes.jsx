@@ -20,10 +20,11 @@ function Aspirantes (){
         <>
         <section className="content aspirantes">
         <h2>Aspirantes</h2>
+        <article className="person-boxes">
           {aspirantes && aspirantes.map((aspirante)=>{
             return(
-              <article key={aspirante.id} className="person-boxes">
-                <div className="person-box shadow p-3 mb-5 bg-body-tertiary rounded">
+              
+                <div key={aspirante.id}  className="person-box shadow p-3 mb-5 bg-body-tertiary rounded">
                   <div className="box-avatar">
                     <img src={aspirante.imagen} alt="" />
                   </div>
@@ -43,10 +44,9 @@ function Aspirantes (){
                     </button>
                   </div>
                 </div>
-              </article>
             )
           })}
-          
+        </article>
        
       </section>
         </>
