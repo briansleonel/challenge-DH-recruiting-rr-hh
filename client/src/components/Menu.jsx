@@ -1,4 +1,9 @@
+import { useState } from "react";
+import PageProfesiones from "./PageProfesiones";
+
 function Menu (){
+  const[show, toggleShow]=useState(true);
+
     return(
         <>
         <header className="menu-wrap">
@@ -8,7 +13,10 @@ function Menu (){
                 </div>
                 <figcaption>Digital House</figcaption>
             </figure>
-            <nav>
+            <button onClick={()=>toggleShow(!show)} className="butom-desp">
+              <i className="fa-solid fa-bars" style={{ color: "#000000" }} />
+            </button>
+            {show && <nav>
                 <section className="menu">
                   <h3>Opciones</h3>
                   <ul>
@@ -31,7 +39,7 @@ function Menu (){
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="/profesiones">
                         <i className="bi bi-list-check" />- Profesiones
                       </a>
                     </li>
@@ -52,6 +60,8 @@ function Menu (){
                   </ul>
                 </section>
             </nav>
+            }
+
         </header>
         </>
     )

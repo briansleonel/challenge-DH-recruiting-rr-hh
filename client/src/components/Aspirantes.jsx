@@ -15,20 +15,22 @@ function Aspirantes (){
 		};
 		getAspirantes();
 	}, ([]));
+  
     return(
         <>
         <section className="content aspirantes">
         <h2>Aspirantes</h2>
+        <article className="person-boxes">
           {aspirantes && aspirantes.map((aspirante)=>{
             return(
-              <article key={aspirante.id} className="person-boxes">
-                <div className="person-box shadow p-3 mb-5 bg-body-tertiary rounded">
+              
+                <div key={aspirante.id}  className="person-box shadow p-3 mb-5 bg-body-tertiary rounded">
                   <div className="box-avatar">
-                    <img src="{aspirante.img}" alt="" />
+                    <img src={aspirante.imagen} alt="" />
                   </div>
                   <div className="box-bio">
                     <h2 className="bio-name">{aspirante.nombre}</h2>
-                    <p className="bio-position">{aspirante.profesion_id}</p>
+                    <p className="bio-position">{aspirante.profesion.nombre}</p>
                   </div>
                   <div className="box-actions">
                     <button>
@@ -42,10 +44,9 @@ function Aspirantes (){
                     </button>
                   </div>
                 </div>
-              </article>
             )
           })}
-          
+        </article>
        
       </section>
         </>
