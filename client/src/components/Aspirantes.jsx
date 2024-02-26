@@ -24,7 +24,7 @@ function Aspirantes (){
               <article key={aspirante.id} className="person-boxes">
                 <div className="person-box shadow p-3 mb-5 bg-body-tertiary rounded">
                   <div className="box-avatar">
-                    <img src="{aspirante.img}" alt="" />
+                    <img src={aspirante.imagen} alt="" />
                   </div>
                   <div className="box-bio">
                     <h2 className="bio-name">{aspirante.nombre}</h2>
