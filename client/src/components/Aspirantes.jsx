@@ -15,6 +15,7 @@ function Aspirantes (){
 		};
 		getAspirantes();
 	}, ([]));
+  
     return(
         <>
         <section className="content aspirantes">
@@ -28,7 +29,7 @@ function Aspirantes (){
                   </div>
                   <div className="box-bio">
                     <h2 className="bio-name">{aspirante.nombre}</h2>
-                    <p className="bio-position">{aspirante.profesion_id}</p>
+                    <p className="bio-position">{aspirante.profesion.nombre}</p>
                   </div>
                   <div className="box-actions">
                     <button>

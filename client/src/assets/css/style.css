@@ -85,10 +85,10 @@ body {
 .search-wrap .user-actions button:hover svg circle {
   fill: #2b3a60;
 }
+/*MENU*/
 .menu-wrap {
   grid-area: menu;
   padding-bottom: 3em;
-  overflow: auto;
   background: #fff;
   border-right: 1px solid #ede8f0;
 }
@@ -96,7 +96,7 @@ body {
   height: 80px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   margin: 0;
   padding: 0 3em;
 }
@@ -347,4 +347,48 @@ body {
 .content-wrap .person-boxes .person-box .box-actions button:hover svg path,
 .content-wrap .person-boxes .person-box .box-actions button:hover svg circle {
   fill: #2b3a60;
+}
+
+@media(max-width: 480px){
+  .dashboard{
+    display: flex;
+    flex-direction: column;
+  }
+  .search-wrap{
+    padding: 10px 30px
+  }
+  .search-wrap .search label input {
+    width: 100px;
+  }
+  /*MENU*/
+  .menu-wrap{
+    padding-bottom: 1em;
+    background: #fff;
+    border-right: 1px solid #ede8f0;
+  }
+  .menu-wrap .user {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0 3em;
+  }
+  .menu-wrap nav section{
+    padding: 0em 0 0;
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  
+}
+.butom-desp{
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  background-color: white;
+  text-align: center;
 }

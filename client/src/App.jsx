@@ -1,11 +1,9 @@
-import { useState } from 'react'
 import Aspirantes from './components/aspirantes'
 import Profesiones from './components/Profesiones'
 import AccesNav from './components/AcessNav'
 import Menu from './components/Menu'
 
 function App() {
-
   return (
     <>
   {/*Dashboard*/}
