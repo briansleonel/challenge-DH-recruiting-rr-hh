@@ -5,7 +5,6 @@ import AccesNav from './components/AcessNav'
 import Menu from './components/Menu'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
